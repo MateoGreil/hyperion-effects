@@ -1,0 +1,73 @@
+{
+    "type": "object",
+    "script": "snowfall-sparkle.py",
+    "title": "Snowfall Sparkle",
+    "required": true,
+    "properties": {
+        "snow_density": {
+            "type": "number",
+            "title": "Snow Density",
+            "default": 0.3,
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "step": 0.05,
+            "propertyOrder": 1
+        },
+        "fall_speed": {
+            "type": "number",
+            "title": "Fall Speed",
+            "default": 0.5,
+            "minimum": 0.1,
+            "maximum": 2.0,
+            "step": 0.1,
+            "propertyOrder": 2
+        },
+        "twinkle_frequency": {
+            "type": "number",
+            "title": "Twinkle Frequency",
+            "default": 0.1,
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "step": 0.05,
+            "propertyOrder": 3
+        },
+        "base_brightness": {
+            "type": "number",
+            "title": "Base Brightness",
+            "default": 0.2,
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "step": 0.05,
+            "propertyOrder": 4
+        },
+        "snow_color": {
+            "type": "array",
+            "title": "Snow Color (RGB)",
+            "default": [200, 220, 255],
+            "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 255
+            },
+            "minItems": 3,
+            "maxItems": 3,
+            "format": "colorpicker",
+            "propertyOrder": 5
+        },
+        "twinkle_color": {
+            "type": "array",
+            "title": "Twinkle Color (RGB)",
+            "default": [255, 255, 255],
+            "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 255
+            },
+            "minItems": 3,
+            "maxItems": 3,
+            "format": "colorpicker",
+            "propertyOrder": 6
+        }
+    },
+    "additionalProperties": false
+}

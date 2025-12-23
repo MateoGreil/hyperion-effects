@@ -1,0 +1,12 @@
+{
+    "name": "Snowfall Sparkle",
+    "script": "snowfall-sparkle.py",
+    "args": {
+        "snow_density": 0.3,
+        "fall_speed": 0.5,
+        "twinkle_frequency": 0.1,
+        "base_brightness": 0.2,
+        "snow_color": [200, 220, 255],
+        "twinkle_color": [255, 255, 255]
+    }
+}
