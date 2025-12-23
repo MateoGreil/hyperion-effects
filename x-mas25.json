@@ -1,0 +1,11 @@
+{
+    "name": "X-Mas25",
+    "script": "x-mas25.py",
+    "args": {
+        "transition_time": 1000,
+        "hold_time": 3000,
+        "ball_size": 1,
+        "black_size": 30,
+        "color_pairs": [[255,0,0], [255,255,0], [0,0,255], [0,255,0]]
+    }
+}

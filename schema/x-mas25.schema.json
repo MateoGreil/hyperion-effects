@@ -1,0 +1,53 @@
+{
+    "type": "object",
+    "script": "x-mas25.py",
+    "title": "X-Mas25",
+    "required": true,
+    "properties": {
+        "transition_time": {
+            "type": "integer",
+            "title": "Transition Time (ms)",
+            "default": 1000,
+            "minimum": 100,
+            "append": "ms",
+            "propertyOrder": 1
+        },
+        "hold_time": {
+            "type": "integer",
+            "title": "Hold Time (ms)",
+            "default": 3000,
+            "minimum": 100,
+            "append": "ms",
+            "propertyOrder": 2
+        },
+        "ball_size": {
+            "type": "integer",
+            "title": "Size of Colored Balls (LEDs)",
+            "default": 1,
+            "minimum": 1,
+            "propertyOrder": 3
+        },
+        "black_size": {
+            "type": "integer",
+            "title": "Size of Black Spacing (LEDs)",
+            "default": 30,
+            "minimum": 1,
+            "propertyOrder": 4
+        },
+        "color_pairs": {
+            "type": "array",
+            "title": "Color Pairs (RGB)",
+            "default": [[255,0,0], [255,255,0], [0,0,255], [0,255,0]],
+            "items": {
+                "type": "array",
+                "format": "colorpicker",
+                "minItems": 3,
+                "maxItems": 3
+            },
+            "minItems": 2,
+            "maxItems": 8,
+            "propertyOrder": 5
+        }
+    },
+    "additionalProperties": false
+}
